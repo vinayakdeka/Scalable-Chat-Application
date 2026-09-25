@@ -23,9 +23,9 @@ export default function Page() {
         </button>
       </div>
       <div>
-        {messages.map((e) => (
-          <li>{e}</li>
-        ))}
+      {messages.map((message, index) => (
+  <li key={`${message}-${index}`}>{message}</li>
+))}
       </div>
     </div>
   );
